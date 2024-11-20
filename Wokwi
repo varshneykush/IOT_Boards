@@ -1,1 +1,27 @@
+Raspberry Pi Pico Multi-Sensor Monitoring System
+This project implements a multi-sensor monitoring system using the Raspberry Pi Pico as the central processing unit. It integrates sensors for temperature, humidity, motion detection, distance measurement, and light intensity monitoring. The system also includes an LCD display for real-time data visualization and components like a buzzer and relay for alert mechanisms.
 
+Features
+Temperature and Humidity Monitoring: Uses a DHT22 sensor to measure temperature and humidity levels.
+Motion Detection: A PIR sensor detects motion in the environment.
+Distance Measurement: An ultrasonic sensor measures the distance of nearby objects.
+Light Intensity Detection: An LDR sensor monitors ambient light levels.
+Alert Mechanisms: A buzzer and relay are activated when readings exceed predefined thresholds.
+LCD Display: Real-time sensor readings are displayed on a 16x2 LCD screen.
+Exit State Alert: The system declares an "Exit State" on the LCD when any sensor value exceeds its threshold.
+Hardware Requirements
+Raspberry Pi Pico (with 3.3V logic)
+DHT22 Sensor (Temperature and Humidity)
+PIR Sensor (Motion Detection)
+Ultrasonic Sensor (HC-SR04)
+LDR Sensor (Light Intensity Detection)
+16x2 LCD Display with I2C Module
+Buzzer
+Relay Module
+Breadboard and Jumper Wires
+Software Requirements
+Arduino IDE
+Required Libraries:
+DHT (for DHT22 sensor)
+Wire (for I2C communication)
+LiquidCrystal_I2C (for LCD control)
